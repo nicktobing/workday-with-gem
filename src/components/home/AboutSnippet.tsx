@@ -11,21 +11,21 @@ const facts = [
 export default function AboutSnippet() {
   return (
     <section className="bg-sand/50 py-20">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[2fr_3fr_2fr] gap-12 items-center">
 
         {/* Left — photo + badge */}
         <div className="relative flex justify-center">
           {/* Arch-shaped photo — tall portrait with fully rounded top */}
           <div
-            className="relative w-56 overflow-hidden shadow-lg"
-            style={{ height: "340px", borderRadius: "9999px 9999px 16px 16px" }}
+            className="relative w-full max-w-xs overflow-hidden shadow-lg"
+            style={{ height: "380px", borderRadius: "9999px 9999px 16px 16px" }}
           >
             <Image
               src="/images/hero-bali.png"
               alt="Behind the scenes — working from a Bali beach cafe with a little one drawing alongside"
               fill
               className="object-cover object-top"
-              sizes="224px"
+              sizes="(max-width: 768px) 100vw, 320px"
             />
           </div>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="bg-cream overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-12 items-center">
 
         {/* Left — copy */}
         <div className="relative">
@@ -48,7 +48,7 @@ export default function Hero() {
         {/* Right — hero photo */}
         <div className="relative">
           {/* Main photo */}
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-lg">
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-lg">
             <Image
               src="/images/gem-about.png"
               alt="Gem working from a Bali beach cafe — laptop open, smiling, iced coffee beside her"
