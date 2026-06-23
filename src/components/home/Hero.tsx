@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -44,25 +45,18 @@ export default function Hero() {
           <div className="absolute bottom-8 -left-2 text-2xl opacity-20 select-none">🌸</div>
         </div>
 
-        {/* Right — photo placeholder */}
+        {/* Right — hero photo */}
         <div className="relative">
           {/* Main photo */}
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-amber-100 via-orange-50 to-stone-200 shadow-lg">
-            {/* Placeholder: swap with <Image> once photos are ready */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-brown/30 text-sm font-medium text-center px-4">
-                📸 Hero photo<br />
-                <span className="text-xs">Replace with beach cafe shot</span>
-              </p>
-            </div>
-
-            {/* Sticky note overlay */}
-            <div className="absolute bottom-8 left-4 bg-yellow-50 border border-yellow-200 rounded p-3 shadow-md rotate-[-1deg] text-xs text-brown w-40">
-              <p className="font-semibold mb-1 font-serif">today&apos;s agenda:</p>
-              {["✓ client work", "✓ content planning", "✓ school run", "✓ respond to DMs", "✓ dinner with fam"].map((item) => (
-                <p key={item} className="leading-5">{item}</p>
-              ))}
-            </div>
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-lg">
+            <Image
+              src="/images/hero-bali.png"
+              alt="Working from a Bali beach cafe — laptop open, iced coffee, and a little one drawing beside me"
+              fill
+              className="object-cover object-center"
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
 
           {/* Behind the scenes label */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const facts = [
   { icon: "☕", text: "Coffee runs fuel everything" },
@@ -15,11 +16,14 @@ export default function AboutSnippet() {
         {/* Left — photo + badge */}
         <div className="relative flex justify-center">
           {/* Circular photo */}
-          <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-amber-100 to-stone-200 flex items-center justify-center shadow-md">
-            <p className="text-brown/30 text-xs text-center px-4">
-              📸 Profile photo<br />
-              <span className="text-[10px]">Replace with headshot</span>
-            </p>
+          <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-md">
+            <Image
+              src="/images/gem-about.png"
+              alt="Gem working at a Bali beach cafe, smiling with her laptop and iced coffee"
+              fill
+              className="object-cover object-top"
+              sizes="256px"
+            />
           </div>
 
           {/* Circular badge */}
