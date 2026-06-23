@@ -15,14 +15,17 @@ export default function AboutSnippet() {
 
         {/* Left — photo + badge */}
         <div className="relative flex justify-center">
-          {/* Circular photo */}
-          <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-md">
+          {/* Arch-shaped photo — tall portrait with fully rounded top */}
+          <div
+            className="relative w-56 overflow-hidden shadow-lg"
+            style={{ height: "340px", borderRadius: "9999px 9999px 16px 16px" }}
+          >
             <Image
-              src="/images/gem-about.png"
-              alt="Gem working at a Bali beach cafe, smiling with her laptop and iced coffee"
+              src="/images/hero-bali.png"
+              alt="Behind the scenes — working from a Bali beach cafe with a little one drawing alongside"
               fill
               className="object-cover object-top"
-              sizes="256px"
+              sizes="224px"
             />
           </div>
 

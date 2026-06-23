@@ -50,8 +50,8 @@ export default function Hero() {
           {/* Main photo */}
           <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-lg">
             <Image
-              src="/images/hero-bali.png"
-              alt="Working from a Bali beach cafe — laptop open, iced coffee, and a little one drawing beside me"
+              src="/images/gem-about.png"
+              alt="Gem working from a Bali beach cafe — laptop open, smiling, iced coffee beside her"
               fill
               className="object-cover object-center"
               priority
